@@ -3,11 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Segoe UI', sans-serif;
   color: #222;
   background: #fff;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -16,6 +18,7 @@ a {
 ul {
   list-style: none;
 }
+
 /* ===========================
    NAVBAR
 =========================== */
@@ -30,6 +33,7 @@ ul {
   top: 0;
   z-index: 100;
 }
+
 .nav-logo {
   font-size: 22px;
   font-weight: 700;
@@ -50,6 +54,7 @@ ul {
 .nav-links a:hover {
   color: #fff;
 }
+
 .nav-icons {
   display: flex;
   align-items: center;
@@ -125,6 +130,7 @@ ul {
   object-fit: cover;
   border-radius: 12px;
 }
+
 /* ===========================
    CATEGORIES
 =========================== */
@@ -162,6 +168,7 @@ ul {
   color: #fff;
   transform: translateY(-4px);
 }
+
 /* ===========================
    PRODUCTS GRID
 =========================== */
@@ -181,6 +188,7 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 24px;
 }
+
 .product-card {
   background: #fff;
   border-radius: 12px;
@@ -192,7 +200,7 @@ ul {
 
 .product-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
 .product-card img {
@@ -259,6 +267,7 @@ ul {
 .add-to-cart-btn:hover {
   background: #333;
 }
+
 /* ===========================
    PROMO BANNER
 =========================== */
@@ -309,6 +318,53 @@ ul {
   padding: 16px;
   font-size: 12px;
 }
+
+/* Hamburger button — desktop pe chhupa do */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile menu — by default band */
+.mobile-menu {
+  display: none;
+  background: #1a1a1a;
+  padding: 0;
+  position: sticky;
+  top: 57px;
+  /* navbar ki height ke barabar */
+  z-index: 99;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li a {
+  display: block;
+  padding: 16px 24px;
+  color: #ccc;
+  font-size: 15px;
+  border-bottom: 1px solid #333;
+  transition: background 0.2s;
+}
+
+.mobile-menu ul li a:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Jab menu khula ho */
+.mobile-menu.open {
+  display: block;
+}
+
 /* ===========================
    RESPONSIVE — Mobile
 =========================== */
@@ -319,6 +375,10 @@ ul {
 
   .nav-links {
     display: none;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .hero {
@@ -348,4 +408,8 @@ ul {
     grid-template-columns: 1fr;
     padding: 30px 20px;
   }
+}
+
+.btn-dark{
+  background: #ad0000;
 }

@@ -9,45 +9,54 @@
 </head>
 
 <body>
-    <!-- ========== NAVBAR ========== -->
-    <nav class="navbar">
-      <div class="nav-logo">THREADS</div>
-      <ul class="nav-links">
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Kids</a></li>
-        <li><a href="#">Sale</a></li>
-      </ul>
-      <div class="nav-icons">
-        <a href="#" id="search-btn">🔍</a>
-        <a href="#">❤️</a>
-        <a href="cart.html">🛒 <span id="cart-count">0</span></a>
-        <a href="login.html">👤</a>
-      </div>
-    </nav>
-    <!-- ========== HERO SECTION ========== -->
-    <section class="hero">
-      <div class="hero-text">
-        <span class="hero-tag">New Collection 2025</span>
-        <h1>Summer Styles<br>Are Here</h1>
-        <p>Up to 40% off on selected items</p>
-        <a href="products.html" class="btn-dark">Shop Now</a>
-      </div>
-      <div class="hero-image">
-        <img src="images/hero.jpg" alt="Summer Collection">
-      </div>
-    </section>
-    <!-- ========== CATEGORIES ========== -->
-    <section class="categories">
-      <h2>Shop by Category</h2>
-      <div class="cat-grid">
-        <div class="cat-card" onclick="filterProducts('men')">Men</div>
-        <div class="cat-card" onclick="filterProducts('women')">Women</div>
-        <div class="cat-card" onclick="filterProducts('kids')">Kids</div>
-        <div class="cat-card" onclick="filterProducts('sale')">Sale</div>
-      </div>
-    </section>
-    <!-- ========== PRODUCTS SECTION ========== -->
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="nav-logo">THREADS</div>
+    <ul class="nav-links">
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Sale</a></li>
+    </ul>
+    <div class="nav-icons">
+      <a href="#" id="search-btn">🔍</a>
+      <a href="#">❤️</a>
+      <a href="cart.html">🛒 <span id="cart-count">0</span></a>
+      <a href="login.html">👤</a>
+      <button class="hamburger" id="hamburger-btn">☰</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Sale</a></li>
+    </ul>
+  </div>
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
+    <div class="hero-text">
+      <span class="hero-tag">New Collection 2025</span>
+      <h1>Summer Styles<br>Are Here</h1>
+      <p>Up to 40% off on selected items</p>
+      <a href="products.html" class="btn-dark">Shop Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero.jpg" alt="Summer Collection">
+    </div>
+  </section>
+  <!-- ========== CATEGORIES ========== -->
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="cat-grid">
+      <div class="cat-card" onclick="filterProducts('men')">Men</div>
+      <div class="cat-card" onclick="filterProducts('women')">Women</div>
+      <div class="cat-card" onclick="filterProducts('kids')">Kids</div>
+      <div class="cat-card" onclick="filterProducts('sale')">Sale</div>
+    </div>
+  </section>
+  <!-- ========== PRODUCTS SECTION ========== -->
   <section class="products-section">
     <h2>Featured Products</h2>
     <div class="products-grid" id="products-container">
@@ -55,9 +64,10 @@
     </div>
   </section>
 
-  <script src="js/main.js"></script>
+  <script src="Javascript/main.js"></script>
 </body>
+
 </html>
-  </body>
+</body>
 
 </html>
